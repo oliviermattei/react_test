@@ -1,0 +1,34 @@
+$black: #000;
+$grey: #828282;
+$white: #fff;
+$orange: #f60;
+$sand-white: #f6f6ef;
+
+$default-margin: .8rem;
+$min-tablet: 'min-width: 768px';
+
+/**
+  Homepage
+ */
+$homepage-background-color: $sand-white;
+$homepage-margin: 12.5%;
+
+/**
+  Story
+ */
+$story-padding: $default-margin;
+$story-title-color: $black;
+$story-url-color: $grey;
+$story-url-font-size: 1rem;
+
+/**
+  Header
+ */
+$header-color: $black;
+$header-background: $orange;
+
+$header-logo-color: $white;
+$header-logo-border: .1rem solid $header-logo-color;
+
+$header-menu-separator-border: .1rem solid $header-color
+

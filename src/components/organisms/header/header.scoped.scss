@@ -1,0 +1,79 @@
+@import '../../../styles/_variables.scss';
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: $default-margin $default-margin/2;
+  color: $header-color;
+  background: $header-background;
+
+  .left {
+    display: flex;
+    align-items: center;
+
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 2rem;
+
+      height: 2rem;
+      margin-right: $default-margin;
+      border: $header-logo-border;
+      color: $header-logo-color;
+    }
+
+    .menu {
+      display: flex;
+      flex-direction: column;
+      line-height: 1;
+
+      .title {
+        margin-right: $default-margin;
+      }
+
+      ul {
+        display: inline-flex;
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+
+        font-size: 1.2rem;
+
+        line-height: 1;
+
+        li {
+          padding: 0 $default-margin / 2;
+          cursor: pointer;
+          border-right: $header-menu-separator-border;
+
+          &:first-child {
+            padding-left: 0;
+          }
+
+          &:last-child {
+            border: none;
+          }
+        }
+      }
+    }
+  }
+
+  .login {
+    margin-right: $default-margin/2;
+  }
+
+}
+
+@media ($min-tablet) {
+  header {
+    .left {
+      .menu {
+        flex-direction: row;
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+@import '../../../styles/_variables.scss';
+
+.story {
+  display: flex;
+  padding: $story-padding;
+
+  article {
+    color: $story-title-color;
+
+    .url {
+      margin-left: $default-margin / 2;
+      $story-url-font-size: 1rem;
+      color: $story-url-color;
+    }
+  }
+
+  aside {
+    display: flex;
+    height: 1.3rem;
+
+    & > :not(:last-child):after {
+      margin: 0 $default-margin;
+      content: '|';
+    }
+  }
+}
